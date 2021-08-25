@@ -26,7 +26,7 @@
     width: 1902px;
     margin-left: auto;
     margin-right: auto;
-    background: rgba(54, 54, 54);
+    background: rgb(44, 44, 44);
 }
 
 .main_info {
@@ -41,7 +41,7 @@
     display: inline;
     height: 100%;
     width: 150px;
-    background: rgba(54, 54, 54, 0.8);
+    background: rgba(44, 44, 44, 0.8);
 }
 
 .text_contacts {
@@ -60,9 +60,9 @@
 
 
 .line_contacts {
-    margin-top: 60px;
+    margin-top: 55px;
     width: 80px;
-    height: 2px;
+    height: 3px;
     margin-left: auto;
     margin-right: auto;
     transform: rotate(-90deg);
@@ -89,7 +89,7 @@
 
 .badge {
     margin-top: 30px;
-    width: 26px;
+    width: 22px;
     margin-left: auto;
     margin-right: auto;
 }
@@ -100,8 +100,10 @@
     margin-right: auto;
 }
 
+
 #upper_text {
     text-transform: uppercase;
+    
 }
 
 
@@ -240,7 +242,7 @@
 .button_open {
     margin-top: 49px;
     height: 50px;
-    width: 140px;
+    width: 160px;
     background: #D1A954;
     font-family: Open Sans Condensed;
     font-style: normal;
