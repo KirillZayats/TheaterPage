@@ -321,7 +321,6 @@
 .picture_teatre {
     width: 350px;
     height: 292px; 
-    background: wheat;
 }
 
 .info_history {
@@ -358,15 +357,15 @@
 }
 
 .img_places {
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
-.img_years {
-    margin-bottom: 17px;
+.img_theatre {
+    margin-bottom: 10px;
 }
 
 .stat_places {
-    margin-bottom: 27px;  
+    margin-bottom: 20px;  
 }
 
 .stat {
