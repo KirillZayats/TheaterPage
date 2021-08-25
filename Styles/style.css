@@ -112,11 +112,11 @@
     width: 100%;
     margin-top: 50px;
     color: #FFFFFF;
-    
     font-family: 'Open Sans Condensed';
     font-size: 18px;
     letter-spacing: 0.1em;
     font-weight: bold;
+    font-style: normal;
 }
 
 .cover {
@@ -262,7 +262,11 @@
 
 .phone_number {
     margin-left: 104px;
-}
+    font-size: 16px;
+    letter-spacing: 0.05em;
+    padding-bottom: 2px;
+    border-bottom: 2.5px solid #D1A954;
+    text-transform: capitalize;}
 
 .about {
     margin-left: auto;
