@@ -1,0 +1,329 @@
+* {
+    margin: 0;
+    padding: 0;
+    /*background: #444444;	*/
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;   
+    -khtml-user-select: none;   
+    -moz-user-select: none;    
+    -ms-user-select: none;       
+    user-select: none;           
+}
+
+.body {
+    width: 1902px;
+    margin-left: auto;
+    margin-right: auto;
+    background: rgba(54, 54, 54);
+}
+
+.main_info {
+    height: 1040px;
+    background-image: url("../Images/background_main_block.png");    
+    display: grid;
+    grid-template-columns: 150px 1750px;
+    margin-bottom: 150px;
+}
+
+.contacts {
+    display: inline;
+    height: 100%;
+    width: 150px;
+    background: rgba(54, 54, 54, 0.8);
+}
+
+.text_contacts {
+    height: 25px;
+    margin: 625px 63px 15px 62px;
+    width: 245px;
+    color: #C4C4C4;
+    transform: rotate(-90deg);
+    transform-origin: top left;
+
+    font-family: 'Open Sans Condensed';
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+
+.line_contacts {
+    margin-top: 60px;
+    width: 80px;
+    height: 2px;
+    margin-left: auto;
+    margin-right: auto;
+    transform: rotate(-90deg);
+    transform-origin: top;
+    background-color: #C4C4C4;
+}
+
+.instagram {
+    padding-top: 50px;
+    height: 26px;
+}
+
+.facebook {
+    height: 26px;
+}
+
+.vk {
+    height: 14px;
+}
+
+.youtube {
+    height: 18px;
+}
+
+.badge {
+    margin-top: 30px;
+    width: 26px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.image_facebook {
+    width: 15px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+#upper_text {
+    text-transform: uppercase;
+}
+
+
+.header {
+    height: 25px;
+    width: 100%;
+    margin-top: 50px;
+    color: #FFFFFF;
+    
+    font-family: 'Open Sans Condensed';
+    font-size: 18px;
+    letter-spacing: 0.1em;
+    font-weight: bold;
+}
+
+.cover {
+    height: 100%;
+    width: 1495px ;
+    padding-left: 255px;
+}
+
+.text_cover {
+    margin-right: 63px;
+}
+
+.info_about_theatre {
+    display: grid;
+    grid-template-columns: 540px 370px;
+}
+
+.title_theatre {
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 64px;
+    line-height: 87px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    margin-bottom: 30px;
+}
+
+.description {
+    font-family: Open Sans;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 21px;
+    height: 79px;
+    padding-right: 5px;
+}
+
+.text_about_theatre {
+    color: white;
+    margin-top: 308px;
+}
+
+.block_poster {
+    height: 570px;
+    width: 370px;
+    margin: 191px 0 0 125px;
+}
+
+.navigation_poster {
+    display: block;
+    position: relative;
+}
+
+.previous_poster {
+    display: inline-block;
+    left: 0px;
+    position: absolute;
+
+    display: grid;
+    grid-template-columns: 40px 43px;
+    column-gap: 25px;
+    width: 108px;
+    
+}
+
+.next_poster {
+    display: inline-block;
+    right: 0px;
+    position: absolute;
+
+    display: grid;
+    grid-template-columns: 43px 40px;
+    column-gap: 24px;
+    width: 108px;
+}
+
+.word_down {
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #C4C4C4;
+    width: 43px;
+
+}
+
+.word_up {
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    width: 43px;
+}
+
+.arrow {
+    height: 16px;
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.image_poster {
+    position:relative;
+    height: 510px;
+    margin-bottom: 35px;
+}
+
+.image_poster .overlay {
+    position:absolute;
+}
+.image_poster .overlay_back {
+    margin: 20px 0 0 20px;
+}
+
+
+.button_open {
+    margin-top: 49px;
+    height: 50px;
+    width: 140px;
+    background: #D1A954;
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+    color: white;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    border: none;
+    cursor: pointer;
+}
+
+.phone_number {
+    margin-left: 104px;
+}
+
+.about {
+    margin-left: auto;
+    margin-right: auto;
+    height: 457px;
+    width: 1110px;
+    margin-bottom: 150px;
+}
+
+.staging {
+    height: 715px;
+    width: 1770px;
+    margin-left: auto;
+    background-color: goldenrod;
+    margin-bottom: 150px;
+}
+
+.awards {
+    margin-left: auto;
+    margin-right: auto;
+    height: 550px;
+    width: 1110px;
+    background-color: rebeccapurple;
+    margin-bottom: 150px;
+}
+
+.partners {
+    margin-left: auto;
+    margin-right: auto;
+    height: 437px;
+    width: 1110px;
+    background-color: royalblue;
+    margin-bottom: 120px;
+}
+
+
+.be_patron {
+    margin-left: auto;
+    margin-right: auto;
+    height: 355px;
+    width: 1110px;
+    background-color: grey;
+    margin-bottom: 80px;
+}
+
+.footer {
+    margin-left: auto;
+    margin-right: auto;
+    height: 78px;
+    width: 1110px;
+    
+}
+
+.hr_footer {
+    height: 1px;
+    background: #989898;
+    margin-bottom: 30px;
+}
+
+.footer_text {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    width: 100%;
+}
+
+.copyright {
+    width: 100%;
+    font: 12px sans-serif;
+    color: #989898;    
+    text-align: left;
+}
+
+.developer {
+    width: 100%;
+    font: 12px sans-serif;
+    color: #989898;    
+    text-align: right;
+}
