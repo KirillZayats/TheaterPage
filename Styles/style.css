@@ -10,6 +10,18 @@
     user-select: none;           
 }
 
+@font-face {
+    font-family: 'Open Sans Condensed';
+    src: url('../Shrifts/OpenSansCondensed-Bold.ttf');
+    font-weight: bold;
+}
+
+@font-face {
+    font-family: 'Open Sans';
+    src: url('../Shrifts/OpenSans-Regular.ttf');
+    font-weight: normal;
+}
+
 .body {
     width: 1902px;
     margin-left: auto;
