@@ -380,10 +380,74 @@
 
 .staging {
     height: 715px;
-    width: 1770px;
+    width: 1902px;
     margin-left: auto;
-    background-color: goldenrod;
     margin-bottom: 150px;
+}
+
+.title_staging {
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #D1A954;
+
+    margin-bottom: 100px;
+}
+
+.production {
+    position:relative;
+
+    margin-left: 132px;
+    width: 1770px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.production .name_prod {
+    margin: -515px 0 0 40px;
+}
+
+.production .find {
+    margin: -330px 0 0 171px;
+}
+
+.production .date_prod {
+    margin: 40px 0 0 -335px;
+}
+
+.image_poster .img_prod_1 {
+    position:absolute;
+}
+
+.name_prod {
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 24px;
+    line-height: 33px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+
+    height: 30px;
+}
+
+.date_prod {
+    font-family: Open Sans Condensed;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 18px;
+    line-height: 25px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    transform: rotate(-90deg);
+
 }
 
 .awards {
