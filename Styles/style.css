@@ -245,7 +245,6 @@
 
 
 .button_open {
-    margin-top: 49px;
     height: 50px;
     width: 160px;
     background: #D1A954;
@@ -262,6 +261,10 @@
     text-transform: uppercase;
     border: none;
     cursor: pointer;
+}
+
+.button_theatre {
+    margin-top: 49px;
 }
 
 .phone_number {
@@ -507,8 +510,36 @@
     margin-right: auto;
     height: 437px;
     width: 1110px;
-    background-color: royalblue;
     margin-bottom: 120px;
+}
+
+.title_partners {
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #D1A954;
+    margin-bottom: 100px;
+}
+
+.net_logos {
+    display: grid;
+    grid-template-rows: 96px 96px;
+    row-gap: 80px;
+}
+
+.row_logos {
+    display: grid;
+    grid-template-columns: 200px 200px 200px 200px;
+    column-gap: 78px;
+}
+
+.logo {
+    background-image: url("../Images/logo_gas.png");
 }
 
 
@@ -517,8 +548,139 @@
     margin-right: auto;
     height: 355px;
     width: 1110px;
-    background-color: grey;
     margin-bottom: 80px;
+}
+
+.title_be_patron {
+
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: #D1A954;
+
+    margin-bottom: 100px;
+}
+
+.data_patron {
+    height: 190px;
+    display: grid;
+    grid-template-columns: 255px 730px;
+    column-gap: 125px;
+}
+
+.main_contacts {
+    width: 255px;
+
+    display: grid;
+    column-gap: 25px;
+
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 22px;
+    letter-spacing: 0.05em;
+    text-transform: uppercase;
+    color: #FFFFFF;
+}
+
+.fields_input {
+    width: 730px;
+}
+
+.fields {
+    height: 100px;
+    width:  730px;
+    margin-bottom: 40px;
+
+    display: grid;
+    grid-template-columns: 180px 180px 310px;
+    column-gap: 30px;
+
+
+}
+
+
+.field_name_input {
+    background: #444444;
+    border: 1px solid #616161;
+    box-sizing: border-box;
+    width: 180px;
+    height: 35px;
+    padding-left: 15px;
+    outline: none;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+
+    display: flex;
+    align-items: center;
+
+    color: #989898;
+
+}
+
+input:focus, textarea:focus {
+    color: #D1A954;
+    border-color: #D1A954;
+}
+
+.field_name_input_message {
+    background: #444444;
+    border: 1px solid #616161;
+    box-sizing: border-box;
+    width: 310px;
+    height: 100px;
+
+    padding: 8px 15px 8px 15px;
+    resize: none;
+    outline: none;
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: 600;
+    font-size: 12px;
+    line-height: 150%;
+
+    display: flex;
+    align-items: center;
+
+    color: #989898;
+}
+
+.row1 {
+    margin-bottom: 30px;
+}
+
+.communication {
+    height: 50px;
+    display: grid;
+    grid-template-columns: 390px 190px;
+    column-gap: 150px;
+}
+
+.attantion_text {
+
+    font-family: 'Open Sans';
+    font-style: normal;
+    font-weight: normal;
+    font-size: 12px;
+    line-height: 150%;
+    color: #989898;
+
+    height: 50px;
+}
+
+.send_button {
+    width: 190px;
 }
 
 .footer {
