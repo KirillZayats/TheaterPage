@@ -1,11 +1,14 @@
 :root {
     --auto-margin: 0 auto;
+    --color-main: white;
+    --color-secondary: #989898;
+    --color-selection: #D1A954;
+    --color-never_mind: #C4C4C4;
 }
 
 * {
     margin: 0;
     padding: 0;
-    /*background: #444444;	*/
     -webkit-touch-callout: none;
     -webkit-user-select: none;   
     -khtml-user-select: none;   
@@ -58,7 +61,7 @@
 
     display: flex;
     align-items: center;
-    color: #989898;
+    color: var(--color-secondary);
 }
 
 .text_title_blocks {
@@ -70,7 +73,7 @@
     text-align: center;
     letter-spacing: 0.1em;
     text-transform: uppercase;
-    color: #D1A954;
+    color: var(--color-selection);
 }
 
 @media screen and (min-width:992px) {
@@ -99,13 +102,16 @@
         height: 25px;
         margin: 625px 63px 15px 62px;
         width: 245px;
-        color: #C4C4C4;
+        color: var(--color-never_mind);
         transform: rotate(-90deg);
         transform-origin: top left;
         font-size: 18px;
         letter-spacing: 0.1em;
     }
     
+    .title_about_text_white {
+        color: var(--color-main);
+    }
     
     .line_contacts {
         margin-top: 55px;
@@ -115,7 +121,7 @@
         margin-right: auto;
         transform: rotate(-90deg);
         transform-origin: top;
-        background-color: #C4C4C4;
+        background-color: var(--color-never_mind);
     }
     
     .instagram {
@@ -155,7 +161,7 @@
         height: 25px;
         width: 100%;
         margin-top: 50px;
-        color: #FFFFFF;
+        color: var(--color-main);
         font-size: 18px;
         letter-spacing: 0.1em;   
     }
@@ -191,7 +197,7 @@
     }
     
     .text_about_theatre {
-        color: white;
+        color: var(--color-main);
         margin-top: 308px;
     }
     
@@ -230,7 +236,7 @@
     }
     
     .word_down {
-        color: #C4C4C4;    
+        color: var(--color-never_mind);    
     }
 
     .word {
@@ -242,7 +248,7 @@
     }
     
     .word_up {
-        color: #FFFFFF;
+        color: var(--color-main);
     }
     
     .arrow {
@@ -267,13 +273,13 @@
     .button_open {
         height: 50px;
         width: 160px;
-        background: #D1A954;
+        background: var(--color-selection);
         font-size: 18px;
         line-height: 25px;
         display: flex;
         align-items: center;
         justify-content: center;
-        color: white;
+        color: var(--color-main);
         letter-spacing: 0.1em;
         text-transform: uppercase;
         border: none;
@@ -290,7 +296,7 @@
         height: 10px;
         letter-spacing: 0.05em;
         padding-bottom: 2px;
-        border-bottom: 2.5px solid #D1A954;
+        border-bottom: 2.5px solid var(--color-selection);
         text-transform: capitalize;
     }
     
@@ -307,10 +313,6 @@
         margin: var(--auto-margin);
         margin-bottom: 100px;
         letter-spacing: 0.09em;
-    }
-    
-    .title_about_text_white {
-        color: white;
     }
     
     .block_about_theatre {
@@ -335,7 +337,7 @@
     .info_history {
         font-size: 14px;
         line-height: 150%;
-        color: #FFFFFF;
+        color: var(--color-main);
     }
  
     .title_history {
@@ -343,7 +345,7 @@
         line-height: 29px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: var(--color-main);
         margin-bottom: 40px;
     }
     
@@ -363,7 +365,7 @@
         font-size: 16px;
         line-height: 22px;
         letter-spacing: 0.05em;
-        color: #D1A954;
+        color: var(--color-selection);
     }
     
     .staging {
@@ -407,7 +409,7 @@
         line-height: 33px;
         letter-spacing: 0.05em;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: var(--color-main);
     
         height: 30px;
     }
@@ -417,7 +419,7 @@
         line-height: 25px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: var(--color-main);
         transform: rotate(-90deg);
     
     }
@@ -448,7 +450,7 @@
         line-height: 98px;
         letter-spacing: 0.1em;
         text-transform: uppercase;
-        color: #D1A954;
+        color: var(--color-selection);
     
     }
     
@@ -463,7 +465,7 @@
         font-weight: bold;
         font-size: 36px;
         line-height: 150%;
-        color: #FFFFFF;
+        color: var(--color-main);
     }
     
     .img_stars {
@@ -526,7 +528,7 @@
         line-height: 22px;
         letter-spacing: 0.05em;
         text-transform: uppercase;
-        color: #FFFFFF;
+        color: var(--color-main);
     }
     
     .fields_input {
@@ -559,8 +561,8 @@
     }
     
     input:focus, textarea:focus {
-        color: #D1A954;
-        border-color: #D1A954;
+        color: var(--color-selection);
+        border-color: var(--color-selection);
     }
     
     .row1 {
@@ -577,8 +579,7 @@
     .attantion_text {
         font-size: 12px;
         line-height: 150%;
-        color: #989898;
-    
+        color: var(--color-secondary); 
         height: 50px;
     }
     
@@ -595,7 +596,7 @@
     
     .hr_footer {
         height: 1px;
-        background: #989898;
+        background: var(--color-secondary);
         margin-bottom: 30px;
     }
     
@@ -617,7 +618,7 @@
     .text_footer {
         font-size: 12px;
         line-height: 150%;
-        color: #989898; 
+        color: var(--color-secondary); 
     }
 }
 
