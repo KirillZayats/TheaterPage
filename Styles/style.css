@@ -1,3 +1,7 @@
+:root {
+    --auto-margin: 0 auto;
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -7,7 +11,7 @@
     -khtml-user-select: none;   
     -moz-user-select: none;    
     -ms-user-select: none;       
-    user-select: none;           
+    user-select: none;         
 }
 
 @font-face {
@@ -28,591 +32,22 @@
     font-weight: normal;
 }
 
-.body {
-    width: 1902px;
-    margin-left: auto;
-    margin-right: auto;
-    background: #333333;
-}
-
-.main_info {
-    height: 1040px;
-    background-image: url("../Images/background_main_block.png");    
-    display: grid;
-    grid-template-columns: 150px 1750px;
-    margin-bottom: 150px;
-}
-
-.contacts {
-    display: inline;
-    height: 100%;
-    width: 150px;
-    background: rgba(49, 49, 49, 0.8);
-}
-
-.text_contacts {
-    height: 25px;
-    margin: 625px 63px 15px 62px;
-    width: 245px;
-    color: #C4C4C4;
-    transform: rotate(-90deg);
-    transform-origin: top left;
-
-    font-family: 'Open Sans Condensed';
-    font-size: 18px;
-    letter-spacing: 0.1em;
-    font-weight: bold;
-}
-
-
-.line_contacts {
-    margin-top: 55px;
-    width: 80px;
-    height: 3px;
-    margin-left: auto;
-    margin-right: auto;
-    transform: rotate(-90deg);
-    transform-origin: top;
-    background-color: #C4C4C4;
-}
-
-.instagram {
-    padding-top: 50px;
-    height: 26px;
-}
-
-.facebook {
-    height: 26px;
-}
-
-.vk {
-    height: 14px;
-}
-
-.youtube {
-    height: 18px;
-}
-
-.badge {
-    margin-top: 30px;
-    width: 22px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.image_facebook {
-    width: 15px;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-
-#upper_text {
-    text-transform: uppercase;
-    
-}
-
-.header {
-    height: 25px;
-    width: 100%;
-    margin-top: 50px;
-    color: #FFFFFF;
-    font-family: 'Open Sans Condensed';
-    font-size: 18px;
-    letter-spacing: 0.1em;
-    font-weight: bold;
-    font-style: normal;
-}
-
-.cover {
-    height: 100%;
-    width: 1495px ;
-    padding-left: 255px;
-}
-
-.text_cover {
-    margin-right: 63px;
-}
-
-.info_about_theatre {
-    display: grid;
-    grid-template-columns: 540px 370px;
-}
-
-.title_theatre {
-    font-family: Open Sans Condensed;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 64px;
-    line-height: 87px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-}
-
-.description {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: normal;
-    font-size: 14px;
-    line-height: 21px;
-    height: 79px;
-    padding-right: 5px;
-}
-
-.text_about_theatre {
-    color: white;
-    margin-top: 308px;
-}
-
-.block_poster {
-    height: 570px;
-    width: 370px;
-    margin: 191px 0 0 125px;
-}
-
-.navigation_poster {
-    display: block;
-    position: relative;
-}
-
-.previous_poster {
-    display: inline-block;
-    left: 0px;
-    position: absolute;
-
-    display: grid;
-    grid-template-columns: 40px 43px;
-    column-gap: 25px;
-    width: 108px;
-    
-}
-
-.next_poster {
-    display: inline-block;
-    right: 0px;
-    position: absolute;
-
-    display: grid;
-    grid-template-columns: 43px 40px;
-    column-gap: 24px;
-    width: 108px;
-}
-
-.word_down {
-    font-family: Open Sans Condensed;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #C4C4C4;
-    width: 43px;
-
-}
-
-.word_up {
-    font-family: Open Sans Condensed;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    width: 43px;
-}
-
-.arrow {
-    height: 16px;
-    margin-top: auto;
-    margin-bottom: auto;
-}
-
-.image_poster {
-    position:relative;
-    height: 510px;
-    margin-bottom: 35px;
-}
-
-.image_poster .overlay {
-    position:absolute;
-}
-.image_poster .overlay_back {
-    margin: 20px 0 0 20px;
-}
-
-
-.button_open {
-    height: 50px;
-    width: 160px;
-    background: #D1A954;
-    font-family: Open Sans Condensed;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: white;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-}
-
-.button_theatre {
-    margin-top: 49px;
-}
-
-.phone_number {
-    margin-left: 100px;
-    font-size: 16px;
-    height: 10px;
-    letter-spacing: 0.05em;
-    padding-bottom: 2px;
-    border-bottom: 2.5px solid #D1A954;
-    text-transform: capitalize;
-}
-
-.about {
-    margin-left: auto;
-    margin-right: auto;
-    height: 457px;
-    width: 1110px;
-    margin-bottom: 150px;
-}
-
-.title_about {
-    height: 65px;
-    width: 180px;
-    margin-bottom: 100px;
-
-    font-family: Open Sans Condensed;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 65px;
-    text-align: center;
-    letter-spacing: 0.09em;
-    text-transform: uppercase;
-    color: #D1A954;
-    margin-left: auto;
-    margin-right: auto;
-}
-
-.title_about_text_white {
-    color: white;
-}
-
-.block_about_theatre {
-    height: 292px;
-    display: grid;
-    grid-template-columns: 475px 285px 350px;
-}
-
-.history {
-    width: 445px;
-}
-
-.number_statistic {
-    width: 255px;
-}
-
-.picture_teatre {
-    width: 350px;
-    height: 292px; 
-}
-
-.info_history {
+.text_normal_fonts {
     font-family: 'Open Sans';
     font-style: normal;
     font-weight: normal;
-    font-size: 14px;
-    line-height: 150%;
-    color: #FFFFFF;
 }
 
-.title_history {
-    font-family: Open Sans Condensed;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 29px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    margin-bottom: 40px;
-}
-
-.title_num_stat {
-    font-family: Open Sans Condensed;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 21px;
-    line-height: 29px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: white;
-    margin-bottom: 40px;
-}
-
-.img_places {
-    margin-bottom: 10px;
-}
-
-.img_theatre {
-    margin-bottom: 10px;
-}
-
-.stat_places {
-    margin-bottom: 20px;  
-}
-
-.stat {
-    font-family: Open Sans Condensed;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.05em;
-    color: #D1A954;
-}
-
-.staging {
-    height: 715px;
-    width: 1902px;
-    margin-left: auto;
-    margin-bottom: 150px;
-}
-
-.title_staging {
-    font-family: Open Sans Condensed;
-    font-style: normal;
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 65px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #D1A954;
-
-    margin-bottom: 100px;
-}
-
-.production {
-    position:relative;
-
-    margin-left: 132px;
-    width: 1770px;
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-}
-
-.production .name_prod {
-    margin: -515px 0 0 40px;
-}
-
-.production .find {
-    margin: -330px 0 0 171px;
-}
-
-.production .date_prod {
-    margin: 40px 0 0 -335px;
-}
-
-.image_poster .img_prod_1 {
-    position:absolute;
-}
-
-.name_prod {
+.text_bold_fonts_condensed {
     font-family: 'Open Sans Condensed';
     font-style: normal;
     font-weight: bold;
-    font-size: 24px;
-    line-height: 33px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-
-    height: 30px;
 }
 
-.date_prod {
-    font-family: Open Sans Condensed;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-    transform: rotate(-90deg);
-
-}
-
-.awards {
-    margin-left: auto;
-    margin-right: auto;
-    height: 550px;
-    width: 1110px;
-    background-image: url("../Images/background_achievements.png");
-    margin-bottom: 150px;
-
-}
-
-.content_awards {
-    margin-left: 190px;
-    padding-top: 126px;
-    display: grid;
-    grid-template-columns: 182px 540px;
-    column-gap: 103px;
-}
-
-.years {
-    height: 298px;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-
-    font-family: 'Open Sans Condensed';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 72px;
-    line-height: 98px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #D1A954;
-
-}
-
-.status {
-    margin-top: 45px;
-    height: 200px;
-}
-
-.text_best_theatre {
-    font-family: Open Sans;
-    font-style: normal;
-    font-weight: bold;
-    font-size: 36px;
-    line-height: 150%;
-    color: #FFFFFF;
-}
-
-.img_stars {
-    margin-bottom: 25px;
-}
-
-.partners {
-    margin-left: auto;
-    margin-right: auto;
-    height: 437px;
-    width: 1110px;
-    margin-bottom: 120px;
-}
-
-.title_partners {
-    font-family: 'Open Sans Condensed';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 65px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #D1A954;
-    margin-bottom: 100px;
-}
-
-.net_logos {
-    display: grid;
-    grid-template-rows: 96px 96px;
-    row-gap: 80px;
-}
-
-.row_logos {
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    column-gap: 78px;
-}
-
-.logo {
-    background-image: url("../Images/logo_gas.png");
-}
-
-
-.be_patron {
-    margin-left: auto;
-    margin-right: auto;
-    height: 355px;
-    width: 1110px;
-    margin-bottom: 80px;
-}
-
-.title_be_patron {
-
-    font-family: 'Open Sans Condensed';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 65px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: #D1A954;
-
-    margin-bottom: 100px;
-}
-
-.data_patron {
-    height: 190px;
-    display: grid;
-    grid-template-columns: 255px 730px;
-    column-gap: 125px;
-}
-
-.main_contacts {
-    width: 255px;
-
-    display: grid;
-    column-gap: 25px;
-
-    font-family: 'Open Sans Condensed';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: #FFFFFF;
-}
-
-.fields_input {
-    width: 730px;
-}
-
-.fields {
-    height: 100px;
-    width:  730px;
-    margin-bottom: 40px;
-
-    display: grid;
-    grid-template-columns: 180px 180px 310px;
-    column-gap: 30px;
-
-
-}
-
-
-.field_name_input {
+.fields_input_main {
     background: #444444;
     border: 1px solid #616161;
     box-sizing: border-box;
-    width: 180px;
-    height: 35px;
-    padding-left: 15px;
     outline: none;
 
     font-family: 'Open Sans';
@@ -623,96 +58,571 @@
 
     display: flex;
     align-items: center;
-
     color: #989898;
-
 }
 
-input:focus, textarea:focus {
+.text_title_blocks {
+    font-family: 'Open Sans Condensed';
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 65px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
     color: #D1A954;
-    border-color: #D1A954;
 }
 
-.field_name_input_message {
-    background: #444444;
-    border: 1px solid #616161;
-    box-sizing: border-box;
-    width: 310px;
-    height: 100px;
-
-    padding: 8px 15px 8px 15px;
-    resize: none;
-    outline: none;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 150%;
-
-    display: flex;
-    align-items: center;
-
-    color: #989898;
-}
-
-.row1 {
-    margin-bottom: 30px;
-}
-
-.communication {
-    height: 50px;
-    display: grid;
-    grid-template-columns: 390px 190px;
-    column-gap: 150px;
-}
-
-.attantion_text {
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: normal;
-    font-size: 12px;
-    line-height: 150%;
-    color: #989898;
-
-    height: 50px;
-}
-
-.send_button {
-    width: 190px;
-}
-
-.footer {
-    margin-left: auto;
-    margin-right: auto;
-    height: 78px;
-    width: 1110px;
+@media screen and (min-width:992px) {
+    .body {
+        width: 1902px;
+        margin: var(--auto-margin);
+        background: #333333;
+    }
     
+    .main_info {
+        height: 1040px;
+        background-image: url("../Images/background_main_block.png");    
+        display: grid;
+        grid-template-columns: 150px 1750px;
+        margin-bottom: 150px;
+    }
+    
+    .contacts {
+        display: inline;
+        height: 100%;
+        width: 150px;
+        background: rgba(49, 49, 49, 0.8);
+    }
+    
+    .text_contacts {
+        height: 25px;
+        margin: 625px 63px 15px 62px;
+        width: 245px;
+        color: #C4C4C4;
+        transform: rotate(-90deg);
+        transform-origin: top left;
+        font-size: 18px;
+        letter-spacing: 0.1em;
+    }
+    
+    
+    .line_contacts {
+        margin-top: 55px;
+        width: 80px;
+        height: 3px;
+        margin-left: auto;
+        margin-right: auto;
+        transform: rotate(-90deg);
+        transform-origin: top;
+        background-color: #C4C4C4;
+    }
+    
+    .instagram {
+        padding-top: 50px;
+        height: 26px;
+    }
+    
+    .facebook {
+        height: 26px;
+    }
+    
+    .vk {
+        height: 14px;
+    }
+    
+    .youtube {
+        height: 18px;
+    }
+    
+    .badge {
+        width: 22px;
+        margin: 30px auto 0 auto
+    }
+    
+    .image_facebook {
+        width: 15px;
+        margin: var(--auto-margin)
+    }
+    
+    
+    #upper_text {
+        text-transform: uppercase;
+        
+    }
+    
+    .header {
+        height: 25px;
+        width: 100%;
+        margin-top: 50px;
+        color: #FFFFFF;
+        font-size: 18px;
+        letter-spacing: 0.1em;   
+    }
+    
+    .cover {
+        height: 100%;
+        width: 1495px ;
+        padding-left: 255px;
+    }
+    
+    .text_cover {
+        margin-right: 63px;
+    }
+    
+    .info_about_theatre {
+        display: grid;
+        grid-template-columns: 540px 370px;
+    }
+    
+    .title_theatre {
+        font-size: 64px;
+        line-height: 87px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 30px;
+    }
+    
+    .description {
+        font-size: 14px;
+        line-height: 21px;
+        height: 79px;
+        padding-right: 5px;
+    }
+    
+    .text_about_theatre {
+        color: white;
+        margin-top: 308px;
+    }
+    
+    .block_poster {
+        height: 570px;
+        width: 370px;
+        margin: 191px 0 0 125px;
+    }
+    
+    .navigation_poster {
+        display: block;
+        position: relative;
+    }
+    
+    .previous_poster {
+        display: inline-block;
+        left: 0px;
+        position: absolute;
+    
+        display: grid;
+        grid-template-columns: 40px 43px;
+        column-gap: 25px;
+        width: 108px;
+        
+    }
+    
+    .next_poster {
+        display: inline-block;
+        right: 0px;
+        position: absolute;
+    
+        display: grid;
+        grid-template-columns: 43px 40px;
+        column-gap: 24px;
+        width: 108px;
+    }
+    
+    .word_down {
+        color: #C4C4C4;    
+    }
+
+    .word {
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        width: 43px; 
+    }
+    
+    .word_up {
+        color: #FFFFFF;
+    }
+    
+    .arrow {
+        height: 16px;
+        margin-top: auto;
+        margin-bottom: auto;
+    }
+    
+    .image_poster {
+        position:relative;
+        height: 510px;
+        margin-bottom: 35px;
+    }
+    
+    .image_poster .overlay {
+        position:absolute;
+    }
+    .image_poster .overlay_back {
+        margin: 20px 0 0 20px;
+    }
+      
+    .button_open {
+        height: 50px;
+        width: 160px;
+        background: #D1A954;
+        font-size: 18px;
+        line-height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: white;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+    }
+    
+    .button_theatre {
+        margin-top: 49px;
+    }
+    
+    .phone_number {
+        margin-left: 100px;
+        font-size: 16px;
+        height: 10px;
+        letter-spacing: 0.05em;
+        padding-bottom: 2px;
+        border-bottom: 2.5px solid #D1A954;
+        text-transform: capitalize;
+    }
+    
+    .about {
+        margin: var(--auto-margin);
+        height: 457px;
+        width: 1110px;
+        margin-bottom: 150px;
+    }
+    
+    .title_about {
+        height: 65px;
+        width: 180px;
+        margin: var(--auto-margin);
+        margin-bottom: 100px;
+        letter-spacing: 0.09em;
+    }
+    
+    .title_about_text_white {
+        color: white;
+    }
+    
+    .block_about_theatre {
+        height: 292px;
+        display: grid;
+        grid-template-columns: 475px 285px 350px;
+    }
+    
+    .history {
+        width: 445px;
+    }
+    
+    .number_statistic {
+        width: 255px;
+    }
+    
+    .picture_teatre {
+        width: 350px;
+        height: 292px; 
+    }
+    
+    .info_history {
+        font-size: 14px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
+ 
+    .title_history {
+        font-size: 21px;
+        line-height: 29px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        margin-bottom: 40px;
+    }
+    
+    .img_places {
+        margin-bottom: 10px;
+    }
+    
+    .img_theatre {
+        margin-bottom: 10px;
+    }
+    
+    .stat_places {
+        margin-bottom: 20px;  
+    }
+    
+    .stat {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: #D1A954;
+    }
+    
+    .staging {
+        height: 715px;
+        width: 1902px;
+        margin-left: auto;
+        margin-bottom: 150px;
+    }
+    
+    .title_staging {
+        margin-bottom: 100px;
+    }
+    
+    .production {
+        position:relative;
+    
+        margin-left: 132px;
+        width: 1770px;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr;
+    }
+    
+    .production .name_prod {
+        margin: -515px 0 0 40px;
+    }
+    
+    .production .find {
+        margin: -330px 0 0 171px;
+    }
+    
+    .production .date_prod {
+        margin: 40px 0 0 -335px;
+    }
+    
+    .image_poster .img_prod_1 {
+        position:absolute;
+    }
+    
+    .name_prod {
+        font-size: 24px;
+        line-height: 33px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    
+        height: 30px;
+    }
+    
+    .date_prod {
+        font-size: 18px;
+        line-height: 25px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+        transform: rotate(-90deg);
+    
+    }
+    
+    .awards {
+        margin: var(--auto-margin);
+        height: 550px;
+        width: 1110px;
+        background-image: url("../Images/background_achievements.png");
+        margin-bottom: 150px;
+    
+    }
+    
+    .content_awards {
+        margin-left: 190px;
+        padding-top: 126px;
+        display: grid;
+        grid-template-columns: 182px 540px;
+        column-gap: 103px;
+    }
+    
+    .years {
+        height: 298px;
+        display: grid;
+        grid-template-rows: 1fr 1fr 1fr;
+    
+        font-size: 72px;
+        line-height: 98px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: #D1A954;
+    
+    }
+    
+    .status {
+        margin-top: 45px;
+        height: 200px;
+    }
+    
+    .text_best_theatre {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 36px;
+        line-height: 150%;
+        color: #FFFFFF;
+    }
+    
+    .img_stars {
+        margin-bottom: 25px;
+    }
+    
+    .partners {
+        margin: var(--auto-margin);
+        height: 437px;
+        width: 1110px;
+        margin-bottom: 120px;
+    }
+    
+    .title_partners {
+        margin-bottom: 100px;
+    }
+    
+    .net_logos {
+        display: grid;
+        grid-template-rows: 96px 96px;
+        row-gap: 80px;
+    }
+    
+    .row_logos {
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+        column-gap: 78px;
+    }
+    
+    .logo {
+        background-image: url("../Images/logo_gas.png");
+    }
+    
+    
+    .be_patron {
+        margin: var(--auto-margin);
+        height: 355px;
+        width: 1110px;
+        margin-bottom: 80px;
+    }
+    
+    .title_be_patron {
+        margin-bottom: 100px;
+    }
+    
+    .data_patron {
+        height: 190px;
+        display: grid;
+        grid-template-columns: 255px 730px;
+        column-gap: 125px;
+    }
+    
+    .main_contacts {
+        width: 255px;
+    
+        display: grid;
+        column-gap: 25px;
+    
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: #FFFFFF;
+    }
+    
+    .fields_input {
+        width: 730px;
+    }
+    
+    .fields {
+        height: 100px;
+        width:  730px;
+        margin-bottom: 40px;
+    
+        display: grid;
+        grid-template-columns: 180px 180px 310px;
+        column-gap: 30px;
+    
+    
+    }
+    
+    .field_name_input {
+        width: 180px;
+        height: 35px;
+        padding-left: 15px;
+    }
+    
+    .field_name_input_message {
+        width: 310px;
+        height: 100px;
+        padding: 8px 15px 8px 15px;
+        resize: none;
+    }
+    
+    input:focus, textarea:focus {
+        color: #D1A954;
+        border-color: #D1A954;
+    }
+    
+    .row1 {
+        margin-bottom: 30px;
+    }
+    
+    .communication {
+        height: 50px;
+        display: grid;
+        grid-template-columns: 390px 190px;
+        column-gap: 150px;
+    }
+    
+    .attantion_text {
+        font-size: 12px;
+        line-height: 150%;
+        color: #989898;
+    
+        height: 50px;
+    }
+    
+    .send_button {
+        width: 190px;
+    }
+    
+    .footer {
+        margin: var(--auto-margin);
+        height: 78px;
+        width: 1110px;
+        
+    }
+    
+    .hr_footer {
+        height: 1px;
+        background: #989898;
+        margin-bottom: 30px;
+    }
+    
+    .footer_text {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
+
+    }
+    
+    .copyright {
+        text-align: left;
+    }
+    
+    .developer {
+        text-align: right;
+    }
+
+    .text_footer {
+        font-size: 12px;
+        line-height: 150%;
+        color: #989898; 
+    }
 }
 
-.hr_footer {
-    height: 1px;
-    background: #989898;
-    margin-bottom: 30px;
-}
-
-.footer_text {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-}
-
-.copyright {
-    width: 100%;
-    font: 12px sans-serif;
-    color: #989898;    
-    text-align: left;
-}
-
-.developer {
-    width: 100%;
-    font: 12px sans-serif;
-    color: #989898;    
-    text-align: right;
+@media screen and (max-width: 992px) {
+    .body {
+        background-color: aqua;
+    }
 }
