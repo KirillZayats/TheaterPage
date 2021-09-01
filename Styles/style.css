@@ -708,7 +708,7 @@ input:focus, textarea:focus {
     }
 
     .text_about_theatre {
-        margin-top: 231px;
+        margin-top: 308px;
     }
 
     .cover {
@@ -808,7 +808,7 @@ input:focus, textarea:focus {
 
         grid-template-rows: 1fr 1fr;
         grid-template-columns: 1fr 1fr;
-        row-gap: 25px;
+        row-gap: 20px;
     }
     
     .fields_input {
