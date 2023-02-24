@@ -1,595 +1,473 @@
-:root {
-    --auto-margin: 0 auto;
-    --color-main: white;
-    --color-secondary: #989898;
-    --color-selection: #D1A954;
-    --color-never_mind: #C4C4C4;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    -webkit-touch-callout: none;
-    -webkit-user-select: none;   
-    -khtml-user-select: none;   
-    -moz-user-select: none;    
-    -ms-user-select: none;       
-    user-select: none;      
-    
-    
-}
-
-img {
-    pointer-events: none;
-}
-
-@font-face {
-    font-family: 'Open Sans Condensed';
-    src: url('../Shrifts/OpenSansCondensed-Bold.ttf');
-    font-weight: bold;
-}
-
-@font-face {
-    font-family: 'Open Sans Condensed';
-    src: url('../Shrifts/OpenSansCondensed-Light.ttf');
-    font-weight: normal;
-}
-
-@font-face {
-    font-family: 'Open Sans';
-    src: url('../Shrifts/OpenSans-Regular.ttf');
-    font-weight: normal;
-}
-
-.text_normal_fonts {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: normal;
-}
-
-.text_bold_fonts_condensed {
-    font-family: 'Open Sans Condensed';
-    font-style: normal;
-    font-weight: bold;
-}
-
-.fields_input_main {
-    background: #444444;
-    border: 1px solid #616161;
-    box-sizing: border-box;
-    outline: none;
-
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: 600;
-    font-size: 12px;
-    line-height: 150%;
-
-    display: flex;
-    align-items: center;
-    color: var(--color-secondary);
-}
-
-.text_title_blocks {
-    font-family: 'Open Sans Condensed';
-    font-style: normal;
-    font-weight: 300;
-    font-size: 48px;
-    line-height: 65px;
-    text-align: center;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--color-selection);
-}
-
-.body {
-    margin: var(--auto-margin);
-    background: #333333;
-}
-
-.contacts {
-    display: inline;
-    height: 100%;
-    width: 150px;
-    background: rgba(49, 49, 49, 0.8);
-}
-
-.text_contacts {
-    height: 25px;
-    margin: 625px 63px 15px 62px;
-    width: 245px;
-    color: var(--color-never_mind);
-    transform: rotate(-90deg);
-    transform-origin: top left;
-    font-size: 18px;
-    letter-spacing: 0.1em;
-}
-
-.main_info {
-    background-image: url("../Images/background_main_block.png");    
-}
-
-.bar_menu_img {
-    display: none;
-}
-
-    
-.title_about_text_white {
-    color: var(--color-main);
-}
-
-.text_about_theatre {
-    color: var(--color-main);
-}
-
-.title_theatre {
-    font-size: 64px;
-    line-height: 87px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    margin-bottom: 30px;
-}
-
-.description {
-    font-size: 14px;
-    line-height: 21px;
-    height: 79px;
-    padding-right: 5px;
-}
-
-.button_open {
-    height: 50px;
-    width: 160px;
-    background: var(--color-selection);
-    font-family: 'Open Sans Condensed';
-    font-style: normal;
-    font-weight: bold;
-    font-size: 18px;
-    line-height: 25px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: var(--color-main);
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    border: none;
-    cursor: pointer;
-}
-
-.button_theatre {
-    margin-top: 49px;
-}
-
-#upper_text {
-    text-transform: uppercase;  
-}
-
-.header {
-    height: 25px;
-    width: 100%;
-    margin-top: 50px;
-    color: var(--color-main);
-    font-size: 18px;
-    letter-spacing: 0.1em;   
-}
-
-.title_history {
-    font-size: 21px;
-    line-height: 29px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--color-main);
-    margin-bottom: 40px;
-}
-
-    
-.title_about {
-    height: 65px;
-    width: 180px;
-    margin: var(--auto-margin);
-    margin-bottom: 100px;
-    letter-spacing: 0.09em;
-}
-
-.info_history {
-    font-size: 14px;
-    line-height: 150%;
-    color: var(--color-main);
-}
-
-.history {
-    width: 445px;
-}
-
-.stat_places {
-    margin-bottom: 20px;  
-}
-
-.stat {
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.05em;
-    color: var(--color-selection);
-}
-
-.img_places {
-    margin-bottom: 10px;
-}
-
-.img_theatre {
-    margin-bottom: 10px;
-}
-
-.hr_footer {
-    height: 1px;
-    background: var(--color-secondary);
-    margin-bottom: 30px;
-}
-
-.footer_text {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    width: 100%;
-}
-
-.copyright {
-    text-align: left;
-}
-
-.developer {
-    text-align: right;
-}
-
-.text_footer {
-    font-size: 12px;
-    line-height: 150%;
-    color: var(--color-secondary); 
-}
-
-.field_name_input {
-    width: 180px;
-    height: 35px;
-    padding-left: 15px;
-}
-
-.field_name_input_message {
-    height: 100px;
-    padding: 8px 15px 8px 15px;
-    resize: none;
-}
-
-.fields {
-    height: 100px;
-    width:  690px;
-    margin-bottom: 40px;
-}
-
-.attantion_text {
-    font-size: 12px;
-    line-height: 150%;
-    color: var(--color-secondary); 
-    height: 50px;
-}
-
-.send_button {
-    width: 190px;
-}
-
-.main_contacts {
-    font-size: 16px;
-    line-height: 22px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--color-main);
-}
-
-.title_be_patron {
-    margin-bottom: 100px;
-}
-
-.row1 {
-    margin-bottom: 30px;
-}
-
-.name_prod {
-    font-size: 24px;
-    line-height: 33px;
-    letter-spacing: 0.05em;
-    text-transform: uppercase;
-    color: var(--color-main);
-
-    height: 30px;
-}
-
-.title_partners {
-    margin-bottom: 100px;
-}
-    
-.image_poster .img_prod_1 {
-    position:absolute;
-}
-
-.net_logos {
-    display: grid;
-    grid-template-rows: 96px 96px;
-    row-gap: 80px;
-}
-
-.row_logos {
-    display: grid;
-    grid-template-columns: 200px 200px 200px 200px;
-    column-gap: 78px;
-}
-
-.date_prod {
-    font-size: 18px;
-    line-height: 25px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--color-main);
-    transform: rotate(-90deg);
-}
-
-.years {
-    height: 298px;
-    display: grid;
-    grid-template-rows: 1fr 1fr 1fr;
-
-    font-size: 72px;
-    line-height: 98px;
-    letter-spacing: 0.1em;
-    text-transform: uppercase;
-    color: var(--color-selection);
-}
-
-.text_best_theatre {
-    font-family: 'Open Sans';
-    font-style: normal;
-    font-weight: bold;
-    line-height: 150%;
-    color: var(--color-main);
-}
-
-.status {
-    margin-top: 45px;
-    height: 200px;
-}
-
-.img_stars {
-    margin-bottom: 25px;
-}
-
-.phone_number {
-    font-size: 16px;
-    letter-spacing: 0.05em;
-    padding-bottom: 2px;
-    border-bottom: 2.5px solid var(--color-selection);
-    text-transform: capitalize;
-}
-
-input:focus, textarea:focus {
-    color: var(--color-selection);
-    border-color: var(--color-selection);
-}
-
-@media screen and (min-width:993px) {
-    .body {
-        width: 1902px;
-        height: 4437px;
+ 
+    :root {
+        --auto-margin: 0 auto;
+        --color-main: white;
+        --color-secondary: #989898;
+        --color-selection: #D1A954;
+        --color-never_mind: #C4C4C4;
+        --size_img_mobile_url: 45px;
+        --backgraund_size: 100% 100%;
     }
 
-    .text_best_theatre {
-        font-size: 36px;
+    html {
+        scroll-behavior: smooth;
+    }
+    
+    * {
+        margin: 0;
+        padding: 0;
+    
+        /* чтобы не выделять объекты */
+        -webkit-touch-callout: none;
+        -webkit-user-select: none;   
+        -khtml-user-select: none;   
+        -moz-user-select: none;    
+        -ms-user-select: none;       
+        user-select: none;    
     }
 
-    .communication {
+    .btn_up {
+        position: fixed;
+        background-image: url("../Images/arrow_icons/up_arrow.png");
         height: 50px;
-        display: grid;
-        grid-template-columns: 390px 190px;
-        column-gap: 150px;
+        width: 50px;
+        right: 20px;
+        bottom: 20px;
+        cursor: pointer;
+
+      }
+
+  
+        .btn_up:hover {
+            background-image: url("../Images/arrow_icons/up_arrow_hover.png");
+        }
+
+        .btn_up::before {
+            content: "";
+            width: 40px;
+            height: 40px;
+            background: transparent no-repeat center center;
+            background-size: 100% 100%;
+            background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='16' height='16' fill='%23fff' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708l6-6z'/%3E%3C/svg%3E");
+          }
+          
+          .btn_up_hide {
+            display: none;
+          }
+
+    .href a {
+        display: block; /* Ссылка как блочный элемент */
+        text-align: center; /* Выравнивание по центру */
+        height: 100%; /* Высота на весь слой */
+       }
+    
+    img {
+        pointer-events: none;
     }
 
-    .fields {
-        display: grid;
-        grid-template-columns: 180px 180px 310px;
-        column-gap: 30px;
+    .find {
+        background-image: url('../Images/find.png');
+        height: 100px;
+        width: 100px;
+        border: none;
+        cursor: pointer;
+        position: absolute;
     }
 
-    .field_name_input_message {
-        width: 310px;
+    .find:hover {
+        background-image: url('../Images/find_hover.png');
+    }
+    
+    @font-face {
+        font-family: 'Open Sans Condensed';
+        src: url('../Shrifts/OpenSansCondensed-Bold.ttf');
+        font-weight: bold;
+    }
+    
+    @font-face {
+        font-family: 'Open Sans Condensed';
+        src: url('../Shrifts/OpenSansCondensed-Light.ttf');
+        font-weight: normal;
+    }
+    
+    @font-face {
+        font-family: 'Open Sans';
+        src: url('../Shrifts/OpenSans-Regular.ttf');
+        font-weight: normal;
+    }
+    
+    .bar_menu_close {
+        display: none;
+        border: 0;
+        float: right;
+        height: 16px;
+        width: 16px;
+        cursor: pointer;
+        background: url("../Images/social_media_icons/close_btm.png");
+
+    }
+
+    .text_cover {
+        cursor: pointer;
+        color: var(--color-main);
+    }
+
+    .text_cover:hover {
+        color: var(--color-selection)
+    }
+
+    .arrow_up {
+        width: 41px;
+        background: url("../Images/arrow_icons/Arrow_up.png");
+    }
+
+    .arrow_up:hover {
+        background: url("../Images/arrow_icons/Arrow_up_hover.png");
+    }
+
+    .arrow_down {
+        background: url("../Images/arrow_icons/Arrow_down.png");
+    }
+
+    .arrow_down:hover {
+        background: url("../Images/arrow_icons/Arrow_down_hover.png");
+    }
+
+
+    .bar_menu_close:hover {
+        background: url("../Images/social_media_icons/close_btm_hover.png");
+    }
+
+    .size_img_mobile_vk{
+        background: url('../Images/social_media_icons/vk.png');
+        height: 14px;
+        width: 26px;
+    }
+
+    .size_img_mobile_vk:hover{
+        background: url('../Images/social_media_icons/vk_hover.png');
+    }
+
+    .size_img_mobile_inst{
+        height: 26px;
+        width: 26px;
+        background: url('../Images/social_media_icons/instagram.png');
+    }
+
+    .size_img_mobile_inst:hover{
+        background: url('../Images/social_media_icons/instagram_hover.png');
+    }
+    
+
+    .size_img_mobile_facebook{
+        height: 26px;
+        width: 15px;
+        background: url('../Images/social_media_icons/facebook.png');
+    }
+
+    .size_img_mobile_facebook:hover{
+        background: url('../Images/social_media_icons/facebook_hover.png');
+    }
+
+    .size_img_mobile_youtube{
+        height: 18px;
+        width: 26px;
+        background: url('../Images/social_media_icons/youtube.png');
+    }
+
+    .size_img_mobile_youtube:hover{
+        background: url('../Images/social_media_icons/youtube_hover.png');
+    }
+
+    .text_normal_fonts {
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: normal;
+    }
+    
+    .text_bold_fonts_condensed {
+        font-family: 'Open Sans Condensed';
+        font-style: normal;
+        font-weight: bold;
+    }
+    
+    .fields_input_main {
+        background: #444444;
+        border: 1px solid #616161;
+        box-sizing: border-box;
+        outline: none;
+    
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: 600;
+        font-size: 12px;
+        line-height: 150%;
+    
+        display: flex;
+        align-items: center;
+        color: var(--color-secondary);
+    }
+    
+    .text_title_blocks {
+        font-family: 'Open Sans Condensed';
+        font-style: normal;
+        font-weight: 300;
+        font-size: 48px;
+        line-height: 65px;
+        text-align: center;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--color-selection);
+    }
+    
+    .body {
+        margin: var(--auto-margin);
+        background: #333333;
+    }
+    
+    .contacts {
+        position: fixed;
+        display: inline;
+        height: 100%;
+        width: 150px;
+        background: rgba(49, 49, 49, 0.8);
+    }
+    
+    .text_contacts {
+        height: 25px;
+        margin: 625px 63px 15px 62px;
+        width: 245px;
+        color: var(--color-never_mind);
+        transform: rotate(-90deg);
+        transform-origin: top left;
+        font-size: 18px;
+        letter-spacing: 0.1em;
     }
     
     .main_info {
-        height: 1045px;
-        display: grid;
-        grid-template-columns: 150px 1750px;
-        margin-bottom: 150px;
+        background-image: url("../Images/background_main_block.png");    
     }
     
-    .line_contacts {
-        margin-top: 55px;
-        width: 80px;
-        height: 3px;
-        margin-left: auto;
-        margin-right: auto;
-        transform: rotate(-90deg);
-        transform-origin: top;
-        background-color: var(--color-never_mind);
+    .bar_menu_img {
+        display: none;
+        cursor: pointer;
     }
-    
-    .instagram {
-        padding-top: 50px;
-        height: 26px;
-    }
-    
-    .facebook {
-        height: 26px;
-    }
-    
-    .vk {
-        height: 14px;
-    }
-    
-    .youtube {
-        height: 18px;
-    }
-    
-    .badge {
-        width: 22px;
-        margin: 30px auto 0 auto
-    }
-    
-    .image_facebook {
-        width: 15px;
-        margin: var(--auto-margin)
-    }
-    
-    .cover {
-        height: 100%;
-        width: 1495px ;
-        padding-left: 255px;
-    }
-    
-    .text_cover {
-        margin-right: 63px;
-    }
-    
-    .info_about_theatre {
-        display: grid;
-        grid-template-columns: 540px 370px;
-    }
-
-    .text_about_theatre {
-        margin-top: 308px;
-    }
-    
-    .block_poster {
-        height: 570px;
-        width: 370px;
-        margin: 191px 0 0 125px;
-    }
-    
-    .navigation_poster {
-        display: block;
-        position: relative;
-    }
-    
-    .previous_poster {
-        display: inline-block;
-        left: 0px;
-        position: absolute;
-    
-        display: grid;
-        grid-template-columns: 40px 43px;
-        column-gap: 25px;
-        width: 108px;
         
-    }
-    
-    .next_poster {
-        display: inline-block;
-        right: 0px;
-        position: absolute;
-    
-        display: grid;
-        grid-template-columns: 43px 40px;
-        column-gap: 24px;
-        width: 108px;
-    }
-    
-    .word_down {
-        color: var(--color-never_mind);    
-    }
-
-    .word {
-        font-size: 18px;
-        line-height: 25px;
-        letter-spacing: 0.1em;
-        text-transform: uppercase;
-        width: 43px; 
-    }
-    
-    .word_up {
+    .title_about_text_white {
         color: var(--color-main);
     }
     
-    .arrow {
-        height: 16px;
-        margin-top: auto;
-        margin-bottom: auto;
+    .text_about_theatre {
+        color: var(--color-main);
     }
     
-    .image_poster {
-        position:relative;
-        height: 510px;
-        margin-bottom: 35px;
+    .title_theatre {
+        font-size: 64px;
+        line-height: 87px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        margin-bottom: 30px;
     }
     
-    .image_poster .overlay {
-        position:absolute;
-    }
-    .image_poster .overlay_back {
-        margin: 20px 0 0 20px;
-    }
-    
-    .phone_number {
-        margin-left: 100px;
-        height: 10px;
+    .description {
+        font-size: 14px;
+        line-height: 21px;
+        height: 79px;
+        padding-right: 5px;
     }
     
-    .about {
+    .button_open {
+        height: 50px;
+        width: 160px;
+        background: var(--color-selection);
+        font-family: 'Open Sans Condensed';
+        font-style: normal;
+        font-weight: bold;
+        font-size: 18px;
+        line-height: 25px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        color: var(--color-main);
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        border: none;
+        cursor: pointer;
+    }
+
+    .button_open:hover {
+        background: var(--color-main);
+        color: var(--color-selection);
+    }
+    
+    .button_theatre {
+        margin-top: 49px;
+    }
+
+    .word:hover {
+        color: var(--color-selection);
+    }
+    
+    #upper_text {
+        text-transform: uppercase;  
+    }
+    
+    .header {
+        height: 25px;
+        width: 100%;
+        margin-top: 50px;
+        color: var(--color-main);
+        font-size: 18px;
+        letter-spacing: 0.1em;   
+    }
+    
+    .title_history {
+        font-size: 21px;
+        line-height: 29px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--color-main);
+        margin-bottom: 40px;
+    }
+    
+        
+    .title_about {
+        height: 65px;
+        width: 180px;
         margin: var(--auto-margin);
-        height: 457px;
-        width: 1110px;
-        margin-bottom: 150px;
+        margin-bottom: 100px;
+        letter-spacing: 0.09em;
     }
     
-    .block_about_theatre {
-        height: 292px;
+    .info_history {
+        font-size: 14px;
+        line-height: 150%;
+        color: var(--color-main);
+    }
+    
+    .history {
+        width: 445px;
+    }
+    
+    .stat_places {
+        margin-bottom: 20px;  
+    }
+    
+    .stat {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        color: var(--color-selection);
+    }
+    
+    .img_places {
+        margin-bottom: 10px;
+    }
+    
+    .img_theatre {
+        margin-bottom: 10px;
+    }
+    
+    .hr_footer {
+        height: 1px;
+        background: var(--color-secondary);
+        margin-bottom: 30px;
+    }
+    
+    .footer_text {
         display: grid;
-        grid-template-columns: 475px 285px 350px;
+        grid-template-columns: 1fr 1fr;
+        width: 100%;
     }
     
-    .number_statistic {
-        width: 255px;
+    .copyright {
+        text-align: left;
     }
     
-    .picture_teatre {
-        width: 350px;
-        height: 292px; 
+    .developer {
+        text-align: right;
     }
     
-    .staging {
-        height: 715px;
-        width: 1902px;
-        margin-left: auto;
-        margin-bottom: 150px;
+    .text_footer {
+        font-size: 12px;
+        line-height: 150%;
+        color: var(--color-secondary); 
     }
     
-    .title_staging {
+    .field_name_input {
+        width: 180px;
+        height: 35px;
+        padding-left: 15px;
+    }
+    
+    .field_name_input_message {
+        height: 100px;
+        padding: 8px 15px 8px 15px;
+        resize: none;
+    }
+    
+    .fields {
+        height: 100px;
+        width:  690px;
+        margin-bottom: 40px;
+    }
+    
+    .attantion_text {
+        font-size: 12px;
+        line-height: 150%;
+        color: var(--color-never_mind); 
+        height: 50px;
+    }
+    
+    .send_button {
+        width: 190px;
+    }
+    
+    .main_contacts {
+        font-size: 16px;
+        line-height: 22px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--color-main);
+    }
+    
+    .title_be_patron {
         margin-bottom: 100px;
     }
     
-    .production {
-        position:relative;
-        margin-left: 132px;
-        width: 1770px;
+    .row1 {
+        margin-bottom: 30px;
+    }
+    
+    .name_prod {
+        font-size: 24px;
+        line-height: 33px;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--color-main);
+    
+        height: 30px;
+    }
+    
+    .title_partners {
+        margin-bottom: 100px;
+    }
+        
+    .image_poster .img_prod_1 {
+        position:absolute;
+    }
+    
+    .net_logos {
         display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
+        grid-template-rows: 96px 96px;
+        row-gap: 80px;
     }
     
-    .production .name_prod {
-        margin: -515px 0 0 40px;
+    .row_logos {
+        display: grid;
+        grid-template-columns: 200px 200px 200px 200px;
+        column-gap: 78px;
     }
-    
-    .production .find {
-        margin: -330px 0 0 171px;
-    }
-    
-    .production .date_prod {
-        margin: 40px 0 0 -335px;
-    }
-
     
     .date_prod {
         font-size: 18px;
@@ -600,581 +478,1014 @@ input:focus, textarea:focus {
         transform: rotate(-90deg);
     }
     
-    .awards {
-        margin: var(--auto-margin);
-        height: 550px;
-        width: 1110px;
-        background-image: url("../Images/background_achievements.png");
-        margin-bottom: 150px;
-    }
-    
-    .content_awards {
-        margin-left: 190px;
-        padding-top: 126px;
+    .years {
+        height: 298px;
         display: grid;
-        grid-template-columns: 182px 540px;
-        column-gap: 103px;
+        grid-template-rows: 1fr 1fr 1fr;
+    
+        font-size: 72px;
+        line-height: 98px;
+        letter-spacing: 0.1em;
+        text-transform: uppercase;
+        color: var(--color-selection);
     }
     
-    .partners {
-        margin: var(--auto-margin);
-        height: 437px;
-        width: 1110px;
-        margin-bottom: 120px;
-    }
-      
-    .be_patron {
-        margin: var(--auto-margin);
-        height: 355px;
-        width: 1110px;
-        margin-bottom: 80px;
-    }
-    
-    .data_patron {
-        height: 190px;
-        display: grid;
-        grid-template-columns: 255px 730px;
-        column-gap: 125px;
-    }
-    
-    .main_contacts {
-        width: 255px;
-        display: grid;
-        column-gap: 25px;
-    }
-    
-    .fields_input {
-        width: 730px;
-    }
-    
-    .footer {
-        margin: var(--auto-margin);
-        height: 78px;
-        width: 1110px; 
-    }
-}
-
-@media screen and (max-width: 992px) {
-    .body {
-        width: 975px;
-        height: 4576px;
-    }
-    
-    .main_info {
-        height: 1045px;
-        width: 975px;
-        display: grid;
-        grid-template-columns: 150px 1750px;
-        margin-bottom: 150px;
-    }
-
-    .line_contacts {
-        margin-top: 55px;
-        width: 80px;
-        height: 3px;
-        margin-left: auto;
-        margin-right: auto;
-        transform: rotate(-90deg);
-        transform-origin: top;
-        background-color: var(--color-never_mind);
-    }
-
-    .instagram {
-        padding-top: 50px;
-        height: 26px;
-    }
-    
-    .facebook {
-        height: 26px;
-    }
-    
-    .vk {
-        height: 14px;
-    }
-    
-    .youtube {
-        height: 18px;
-    }
-    
-    .badge {
-        width: 22px;
-        margin: 30px auto 0 auto
-    }
-    
-    .image_facebook {
-        width: 15px;
-        margin: var(--auto-margin)
-    }
-
-    .block_poster {
-        display: none;
-    }
-
-    .text_about_theatre {
-        margin-top: 308px;
-    }
-
-    .cover {
-        height: 100%;
-        width: 783px ;
-        padding-left: 41px;
-    }
-
-    .description {
-        width: 540px;
-    }
-
-    .about {
-        height: 457px;
-        width: 691px;
-        margin: 0 0 150px 190px;
-    }
-
-    .picture_teatre {
-        display: none;
-    }
-
-    .block_about_theatre {
-        height: 292px;
-        display: grid;
-        grid-template-columns: 475px 210px;
-    }
-
-    .be_patron {
-        margin: var(--auto-margin);
-        height: 494px;
-        width: 690px;
-        margin-bottom: 80px;
-        margin-left: 190px;
-    }
-
-    .footer {
-        height: 78px;
-        width: 690px; 
-        margin-left: 190px;
-    }
-
-    
-    .field_name_input_message {
-        width: 270px;
-    }
-
-    .fields {
-        display: grid;
-        grid-template-columns: 180px 180px 270px;
-        column-gap: 30px;
-    }
-
-    .communication {
-        height: 50px;
-        display: grid;
-        grid-template-columns: 390px 190px;
-        column-gap: 110px;
-    }
-
-    .phohe_number1 {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 1;
-        grid-row-end: 1;
-    }
-
-    .phohe_number2 {
-        display: grid;
-        grid-column-start: 1;
-        grid-column-end: 1;
-        grid-row-start: 2;
-        grid-row-end: 2;
-    }
-
-    .mail {
-        margin-left: auto;
-    }
-
-    .adress {
-        margin-left: auto;
-    }
-
-    .data_patron {
-        height: 330px;
-        display: grid;
-        grid-template-rows: 190px 59px;
-        row-gap: 80px;
-    }
-
-    .main_contacts {
-        width: 690px;
-        display: grid;
-        grid-row-start: 2;
-        grid-row-end: 2;
-
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        row-gap: 20px;
-    }
-    
-    .fields_input {
-        width: 690px;
-        display: grid;
-        grid-row-start: 1;
-        grid-row-end: 1;
-    }
-
-    .production {
-        position:relative;
-        height: 560px;
-        width: 690px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        scroll-behavior:auto;
-        overflow: hidden;
-    }
-    
-    .production .name_prod {
-        margin: -515px 0 0 40px;
-    }
-    
-    .production .find {
-        margin: -330px 0 0 171px;
-    }
-    
-    .production .date_prod {
-        margin: 40px 0 0 -335px;
-    }
-
-    .staging {
-        height: 715px;
-        width: 690px;
-        margin: 0 110px 150px 191px;
-    }
-    
-    .title_staging {
-        margin-bottom: 100px;
-    }
-
-    .partners {
-        height: 437px;
-        width: 690px;
-        margin: 0 0 120px 190px;
-    }
-
-    .net_logos {
-        height: 276px;
-        scroll-behavior:auto;
-        overflow: hidden;
-    }
-
-    .awards {
-        height: 550px;
-        width: 974px;
-        background-image: url("../Images/background_achievements2.png");
-        margin-bottom: 150px;
-    }
-
-    .content_awards {
-        padding-top: 126px;
-        margin-left: 191px;
-        display: grid;
-        grid-template-columns: 182px 540px;
-        column-gap: 58px;
-    }
-
     .text_best_theatre {
-        font-size: 34px;
+        font-family: 'Open Sans';
+        font-style: normal;
+        font-weight: bold;
+        line-height: 150%;
+        color: var(--color-main);
     }
-
-    .header {
-        width: 697px;
-        display: grid;
-        grid-template-columns: 75px 78px 175px 158px 91px;
-        grid-template-rows: 25px 25px;
-        column-gap: 30px;
-        row-gap: 50px;
+    
+    .status {
+        margin-top: 45px;
+        height: 200px;
     }
-
+    
+    .img_stars {
+        margin-bottom: 25px;
+    }
+    
     .phone_number {
-        width: 118px;
-        margin-left: 30px;
-        display: grid;
-        grid-column-start: 3;
-        grid-column-end: 3;
-        grid-row-start: 2;
-    }
-}
-
-@media screen and (max-width:576px) { 
-
-    .body {
-        width: 576px;
-        height: 3985px;
-    }
-
-    .footer {
-        height: 78px;  
-        width: 504px; 
-        margin: 0 33px 0 39px;
-    }
-
-    .partners {
-        height: 437px;
-        width: 504px;
-        margin: 0 33px 60px 33px;
-    }
-
-    .net_logos {
-        height: 276px;
-        scroll-behavior:auto;
-        overflow: hidden;
-    }
-
-    .title_partners {
-        margin-bottom: 60px;
-    }
-
-    .awards {
-        height: 550px;
-        width: 576px;
-        background-image: url("../Images/background_achievements3.png");
-        margin-bottom: 80px;
-    }
-
-    .content_awards {
-        padding-top: 126px;
-        margin-left: 33px;
-        display: grid;
-        grid-template-columns: 156px 330px;
-        column-gap: 24px;
-    }
-
-    .text_best_theatre {
-        font-size: 25px;
-    }
-
-    .staging {
-        height: 675px;
-        width: 510px;
-        margin: 0 33px 80px 33px;
-    }
-
-    .title_staging {
-        margin-bottom: 60px;
-    }
-
-    .production {
-        position:relative;
-        height: 550px;
-        width: 510px;
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr 1fr;
-        scroll-behavior:auto;
-        overflow: hidden;
+        font-size: 16px;
+        letter-spacing: 0.05em;
+        padding-bottom: 2px;
+        border-bottom: 2.5px solid var(--color-selection);
+        text-transform: capitalize;
     }
     
-    .production .name_prod {
-        margin: -515px 0 0 40px;
+    input:focus, textarea:focus {
+        color: var(--color-selection);
+        border-color: var(--color-selection);
+    }
+
+
+    
+    @media screen and (min-width:993px) {
+        .body {
+            width: 1902px;
+            height: 4437px;
+        }
+    
+        .text_best_theatre {
+            font-size: 36px;
+        }
+    
+        .communication {
+            height: 50px;
+            display: grid;
+            grid-template-columns: 390px 190px;
+            column-gap: 150px;
+        }
+    
+        .fields {
+            display: grid;
+            grid-template-columns: 180px 180px 310px;
+            column-gap: 30px;
+        }
+    
+        .field_name_input_message {
+            width: 310px;
+        }
+        
+        .main_info {
+            height: 1045px;
+            display: grid;
+            grid-template-columns: 150px 1750px;
+            margin-bottom: 150px;
+        }
+        
+        .line_contacts {
+            margin-top: 55px;
+            width: 80px;
+            height: 3px;
+            margin-left: auto;
+            margin-right: auto;
+            transform: rotate(-90deg);
+            transform-origin: top;
+            background-color: var(--color-never_mind);
+        }
+        
+        .instagram {
+            padding-top: 50px;
+            height: 26px;
+        }
+        
+        .vk {
+            height: 14px;
+        }
+        
+        .youtube {
+            height: 18px;
+        }
+        
+        .badge {
+            width: 22px;
+            margin: 30px auto 0 auto
+        }
+        
+        .image_facebook {
+            width: 15px;
+            margin: var(--auto-margin)
+        }
+        
+        .cover {
+            height: 100%;
+            width: 1495px ;
+            padding-left: 255px;
+        }
+        
+        .text_cover {
+            margin-right: 63px;
+        }
+
+        .info_about_theatre {
+            display: grid;
+            grid-template-columns: 540px 370px;
+        }
+    
+        .text_about_theatre {
+            margin-top: 308px;
+        }
+        
+        .block_poster {
+            height: 570px;
+            width: 370px;
+            margin: 191px 0 0 125px;
+        }
+        
+        .navigation_poster {
+            display: block;
+            position: relative;
+        }
+        
+        .previous_poster {
+            display: inline-block;
+            left: 0px;
+            position: absolute;
+        
+            display: grid;
+            grid-template-columns: 40px 43px;
+            column-gap: 25px;
+            width: 108px;
+            
+        }
+        
+        .next_poster {
+            display: inline-block;
+            right: 0px;
+            position: absolute;
+        
+            display: grid;
+            grid-template-columns: 43px 40px;
+            column-gap: 24px;
+            width: 108px;
+        }
+        
+        .word_down {
+            color: var(--color-never_mind);    
+        }
+    
+        .word {
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            width: 43px; 
+        }
+        
+        .word_up {
+            color: var(--color-main);
+        }
+        
+        .arrow {
+            height: 16px;
+            margin-top: auto;
+            margin-bottom: auto;
+        }
+        
+        .image_poster {
+            position:relative;
+            height: 510px;
+            margin-bottom: 35px;
+        }
+        
+        .image_poster .overlay {
+            position:absolute;
+        }
+        .image_poster .overlay_back {
+            margin: 20px 0 0 20px;
+        }
+        
+        .phone_number {
+            margin-left: 100px;
+            height: 10px;
+        }
+        
+        .about {
+            margin: var(--auto-margin);
+            height: 457px;
+            width: 1110px;
+            margin-bottom: 150px;
+        }
+        
+        .block_about_theatre {
+            height: 292px;
+            display: grid;
+            grid-template-columns: 475px 285px 350px;
+        }
+        
+        .number_statistic {
+            width: 255px;
+        }
+        
+        .picture_teatre {
+            width: 350px;
+            height: 292px; 
+        }
+        
+        .staging {
+            height: 715px;
+            width: 1902px;
+            margin-left: auto;
+            margin-bottom: 150px;
+        }
+        
+        .title_staging {
+            margin-bottom: 100px;
+        }
+        
+        .production {
+            position:relative;
+            margin-left: 150px;
+            height: 560px;
+            width: 1752px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+
+            overflow: hidden;   
+        }
+        
+        .production .name_prod {
+            margin: -515px 0 0 40px;
+        }
+        
+        .production .find {
+            margin: -330px 0 0 171px;
+        }
+        
+        .production .date_prod {
+            margin: 40px 0 0 -335px;
+        }
+    
+        
+        .date_prod {
+            font-size: 18px;
+            line-height: 25px;
+            letter-spacing: 0.1em;
+            text-transform: uppercase;
+            color: var(--color-main);
+            transform: rotate(-90deg);
+        }
+        
+        .awards {
+            margin: var(--auto-margin);
+            height: 550px;
+            width: 1110px;
+            background-image: url("../Images/background_achievements.png");
+            margin-bottom: 150px;
+        }
+        
+        .content_awards {
+            margin-left: 190px;
+            padding-top: 126px;
+            display: grid;
+            grid-template-columns: 182px 540px;
+            column-gap: 103px;
+        }
+        
+        .partners {
+            margin: var(--auto-margin);
+            height: 437px;
+            width: 1110px;
+            margin-bottom: 120px;
+        }
+          
+        .be_patron {
+            margin: var(--auto-margin);
+            height: 355px;
+            width: 1110px;
+            margin-bottom: 80px;
+        }
+        
+        .data_patron {
+            height: 190px;
+            display: grid;
+            grid-template-columns: 255px 730px;
+            column-gap: 125px;
+        }
+        
+        .main_contacts {
+            width: 255px;
+            display: grid;
+            column-gap: 25px;
+        }
+        
+        .fields_input {
+            width: 730px;
+        }
+        
+        .footer {
+            margin: var(--auto-margin);
+            height: 78px;
+            width: 1110px; 
+        }
     }
     
-    .production .find {
-        margin: -330px 0 0 171px;
+    @media screen and (max-width: 992px) {
+        .body {
+            width: 975px;
+            height: 4576px;
+        }
+        
+        .main_info {
+            height: 1045px;
+            width: 975px;
+            display: grid;
+            grid-template-columns: 150px 1750px;
+            margin-bottom: 150px;
+        }
+    
+        .line_contacts {
+            margin-top: 55px;
+            width: 80px;
+            height: 3px;
+            margin-left: auto;
+            margin-right: auto;
+            transform: rotate(-90deg);
+            transform-origin: top;
+            background-color: var(--color-never_mind);
+        }
+    
+        .instagram {
+            padding-top: 50px;
+            height: 26px;
+        }
+        
+        .vk {
+            height: 14px;
+        }
+        
+        .youtube {
+            height: 18px;
+        }
+        
+        .badge {
+            width: 22px;
+            margin: 30px auto 0 auto
+        }
+        
+        .image_facebook {
+            width: 15px;
+            margin: var(--auto-margin)
+        }
+    
+        .block_poster {
+            display: none;
+        }
+    
+        .text_about_theatre {
+            margin-top: 308px;
+        }
+    
+        .cover {
+            height: 100%;
+            width: 783px ;
+            padding-left: 191px;
+        }
+    
+        .description {
+            width: 540px;
+        }
+    
+        .about {
+            height: 457px;
+            width: 691px;
+            margin: 0 0 150px 190px;
+        }
+    
+        .picture_teatre {
+            display: none;
+        }
+    
+        .block_about_theatre {
+            height: 292px;
+            display: grid;
+            grid-template-columns: 475px 210px;
+        }
+    
+        .be_patron {
+            margin: var(--auto-margin);
+            height: 494px;
+            width: 690px;
+            margin-bottom: 80px;
+            margin-left: 190px;
+        }
+    
+        .footer {
+            height: 78px;
+            width: 690px; 
+            margin-left: 190px;
+        }
+    
+        
+        .field_name_input_message {
+            width: 270px;
+        }
+    
+        .fields {
+            display: grid;
+            grid-template-columns: 180px 180px 270px;
+            column-gap: 30px;
+        }
+    
+        .communication {
+            height: 50px;
+            display: grid;
+            grid-template-columns: 390px 190px;
+            column-gap: 110px;
+        }
+    
+        .phohe_number1 {
+            display: grid;
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+    
+        .phohe_number2 {
+            display: grid;
+            grid-column-start: 1;
+            grid-column-end: 1;
+            grid-row-start: 2;
+            grid-row-end: 2;
+        }
+    
+        .mail {
+            margin-left: auto;
+        }
+    
+        .adress {
+            margin-left: auto;
+        }
+    
+        .data_patron {
+            height: 330px;
+            display: grid;
+            grid-template-rows: 190px 59px;
+            row-gap: 80px;
+        }
+    
+        .main_contacts {
+            width: 690px;
+            display: grid;
+            grid-row-start: 2;
+            grid-row-end: 2;
+    
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 20px;
+        }
+        
+        .fields_input {
+            width: 690px;
+            display: grid;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+    
+        .production {
+            position:relative;
+            height: 560px;
+            width: 690px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            scroll-behavior:auto;
+            overflow: hidden;
+        }
+        
+        .production .name_prod {
+            margin: -515px 0 0 40px;
+        }
+        
+        .production .find {
+            margin: -330px 0 0 171px;
+        }
+        
+        .production .date_prod {
+            margin: 40px 0 0 -335px;
+        }
+    
+        .staging {
+            height: 715px;
+            width: 690px;
+            margin: 0 110px 150px 191px;
+        }
+        
+        .title_staging {
+            margin-bottom: 100px;
+        }
+    
+        .partners {
+            height: 437px;
+            width: 690px;
+            margin: 0 0 120px 190px;
+        }
+    
+        .net_logos {
+            height: 276px;
+            scroll-behavior:auto;
+            overflow: hidden;
+        }
+    
+        .awards {
+            height: 550px;
+            width: 974px;
+            background-image: url("../Images/background_achievements2.png");
+            margin-bottom: 150px;
+        }
+    
+        .content_awards {
+            padding-top: 126px;
+            margin-left: 191px;
+            display: grid;
+            grid-template-columns: 182px 540px;
+            column-gap: 58px;
+        }
+    
+        .text_best_theatre {
+            font-size: 34px;
+        }
+    
+        .header {
+            width: 697px;
+            display: grid;
+            grid-template-columns: 75px 78px 175px 158px 91px;
+            grid-template-rows: 25px 25px;
+            column-gap: 30px;
+            row-gap: 50px;
+        }
+    
+        .phone_number {
+            width: 118px;
+            margin-left: 30px;
+            display: grid;
+            grid-column-start: 3;
+            grid-column-end: 3;
+            grid-row-start: 2;
+        }
     }
     
-    .production .date_prod {
-        margin: 40px 0 0 -335px;
-    }
+    @media screen and (max-width:576px) { 
+    
+        .body {
+            width: 576px;
+            height: 3985px;
+        }
 
-    .about {
-        height: 590px;
-        width: 510px;
-        margin: 0 33px 80px 33px;
-    }
+        .contacts {
+            background: #333333;
+        }
 
-    .block_about_theatre {
-        height: 465;
-        width: 510px;
-        display: grid;
-        grid-template-rows: 273px 165px;
-    }
+        .image_facebook {
+            margin: 0 auto 0 auto;
+            width: 23.1px;
+        }
 
-    .history {
-        width: 510px;
-        display: grid;
-        grid-row-start: 1;
-        grid-row-end: 1;
-    }
+        .badge {
+            width: 40px;
+            height: 40px;
+            margin: 0 auto 0 auto;
+        }
 
-    .number_statistic {
-        margin-top: 27px;
-        height: 165px;
-        width: 510px;
-        display: grid;
-        grid-row-start: 2;
+        .vk_href {
+            margin-top: 9.15px;
+            height: 21.3px;
+        }
 
-    }
+        .size_href {
+            size: 40px 40px;
+        }
 
-    .title_history {
-        text-align: center;
-    }
+        .youtube_href {
+            margin-top: 6.2px;
+            height: 27.6px;
+        }
 
-    .info_history {
-        margin: 0 auto;
-        height: 210px;
-        width: 504px;
-        text-align: center;
-    }
+        .href {
+            height: 40px;
+            width: 40px;
+        }
 
-    .statistic {
-        margin-left: 82px;
-        display: grid;
-        grid-template-columns: 168px 119px;
-        column-gap: 60px;
+        .size_img_mobile_inst{
+            height: var(--size_img_mobile_url);
+            background: url('../Images/social_media_icons/instagram_m.png');
+            height: 40px;
+            width: 40px;
+        }
+        .size_img_mobile_facebook{
+            height: var(--size_img_mobile_url);
+            background: url('../Images/social_media_icons/facebook_m.png');
+            height: 40px;
+            width: 23.1px;
+            
+        }
 
-    }
 
-    .title_about {
-        margin-bottom: 60px;
-    }
+        .size_img_mobile_vk{
+            width: var(--size_img_mobile_url);
+            background: url('../Images/social_media_icons/vk_m.png');
+            height: 21.3px;
+            width: 40px;
 
-    .main_info {
-        margin-bottom: 80px;
-    }
+        }
 
-    .be_patron {
-        margin: var(--auto-margin);
-        height: 634px;
-        width: 510px;
-        margin-bottom: 60px;
-        margin-left: 33px;
-    }
+        .size_img_mobile_vk:hover {
+            background: url('../Images/social_media_icons/vk_m_hover.png');
+            background-size: var(--backgraund_size);
 
-    .data_patron {
-        height: 509px;
-        display: grid;
-        grid-template-rows: 400px 59px;
-        row-gap: 50px;
-    }
+        }
 
-    .title_be_patron {
-        margin-bottom: 60px;
-    }
+        .size_img_mobile_inst:hover {
+            background: url('../Images/social_media_icons/instagram_m_hover.png');
+            background-size: var(--backgraund_size);
 
-    .fields_input {
-        width: 509px;
-    }
+        }
 
-    .fields {
-        width: 509px;
-        height: 230px;
-        display: grid;
-        grid-template-columns: 230px 230px;
-        column-gap: 49px;
-        grid-template-rows: 100px 100px;
-        row-gap: 30px;
-    }
+        .size_img_mobile_facebook:hover {
+            background: url('../Images/social_media_icons/facebook_m_hover.png');
+            background-size: var(--backgraund_size);
 
-    .column3_fields {
-        display: grid;
-        display: grid;
-        grid-row-start: 2;
-    }
+        }
 
-    .field_name_input {
-        width: 230px;
-        padding-left: 15px;
-    }
+        .size_img_mobile_youtube:hover {
+            background: url('../Images/social_media_icons/youtube_m_hover.png');
+            background-size: var(--backgraund_size);
 
-    .field_name_input_message {
-        width: 509px;
-    }
+        }
 
-    .communication {
-        height: 130px;
-        width: 509px;
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: 50px 50px;
-        row-gap: 30px;
-    }
+        .size_img_mobile_youtube{
+            width: var(--size_img_mobile_url);
+            background: url('../Images/social_media_icons/youtube_m.png');
+            height: 27.6px;
+            width: 40px;
+        }
 
-    .attantion_text {
-        width: 435;
-        text-align: center;
-        display: grid;
-        grid-row-start: 2;
-    }
+        .black_a {
+            background-size: var(--backgraund_size);
+        }
+        
+        .links_social_networks {
+            margin-top: 400px;
+            height: 100px;
+            width: 118px;
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;   
+            margin-left: auto;
+            margin-right: auto;     
+        }
 
-    .send_info {
-        margin: var(--auto-margin);
-        display: grid;
-        grid-row-start: 1;    
-    }
+        .vk {
+            margin-top: auto;
+        }
+        .youtube {
+            margin-top: auto;
+        }
 
-    .main_contacts {
-        width: 509px;
-        display: grid;
-        grid-row-start: 2;
-        grid-row-end: 2;
+        .instagram {
+            padding-top: 0px;
+        }
 
-        grid-template-rows: 1fr 1fr;
-        grid-template-columns: 1fr 1fr;
-        row-gap: 20px;
-    }
+        .bar_menu_close {
+            margin: 30px 30px 0 auto;
+        }
+    
+        .footer {
+            height: 78px;  
+            width: 504px; 
+            margin: 0 33px 0 39px;
+        }
+    
+        .partners {
+            height: 437px;
+            width: 504px;
+            margin: 0 33px 60px 33px;
+        }
+    
+        .net_logos {
+            height: 276px;
+            scroll-behavior:auto;
+            overflow: hidden;
+        }
+    
+        .title_partners {
+            margin-bottom: 60px;
+        }
+    
+        .awards {
+            height: 550px;
+            width: 576px;
+            background-image: url("../Images/background_achievements3.png");
+            margin-bottom: 80px;
+        }
+    
+        .content_awards {
+            padding-top: 126px;
+            margin-left: 33px;
+            display: grid;
+            grid-template-columns: 156px 330px;
+            column-gap: 24px;
+        }
+    
+        .text_best_theatre {
+            font-size: 25px;
+        }
+    
+        .staging {
+            height: 675px;
+            width: 510px;
+            margin: 0 33px 80px 33px;
+        }
+    
+        .title_staging {
+            margin-bottom: 60px;
+        }
+    
+        .production {
+            position:relative;
+            height: 550px;
+            width: 510px;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr;
+            scroll-behavior:auto;
+            overflow: hidden;
+        }
+        
+        .production .name_prod {
+            margin: -515px 0 0 40px;
+        }
+        
+        .production .find {
+            margin: -330px 0 0 171px;
+        }
+        
+        .production .date_prod {
+            margin: 40px 0 0 -335px;
+        }
+    
+        .about {
+            height: 590px;
+            width: 510px;
+            margin: 0 33px 80px 33px;
+        }
+    
+        .block_about_theatre {
+            height: 465;
+            width: 510px;
+            display: grid;
+            grid-template-rows: 273px 165px;
+        }
+    
+        .history {
+            width: 510px;
+            display: grid;
+            grid-row-start: 1;
+            grid-row-end: 1;
+        }
+    
+        .number_statistic {
+            margin-top: 27px;
+            height: 165px;
+            width: 510px;
+            display: grid;
+            grid-row-start: 2;
+    
+        }
+    
+        .title_history {
+            text-align: center;
+        }
+    
+        .info_history {
+            margin: 0 auto;
+            height: 210px;
+            width: 504px;
+            text-align: center;
+        }
+    
+        .statistic {
+            margin-left: 82px;
+            display: grid;
+            grid-template-columns: 168px 119px;
+            column-gap: 60px;
+    
+        }
+    
+        .title_about {
+            margin-bottom: 60px;
+        }
+    
+        .main_info {
+            margin-bottom: 80px;
+        }
+    
+        .be_patron {
+            margin: var(--auto-margin);
+            height: 634px;
+            width: 510px;
+            margin-bottom: 60px;
+            margin-left: 33px;
+        }
+    
+        .data_patron {
+            height: 509px;
+            display: grid;
+            grid-template-rows: 400px 59px;
+            row-gap: 50px;
+        }
+    
+        .title_be_patron {
+            margin-bottom: 60px;
+        }
+    
+        .fields_input {
+            width: 509px;
+        }
+    
+        .fields {
+            width: 509px;
+            height: 230px;
+            display: grid;
+            grid-template-columns: 230px 230px;
+            column-gap: 49px;
+            grid-template-rows: 100px 100px;
+            row-gap: 30px;
+        }
+    
+        .column3_fields {
+            display: grid;
+            display: grid;
+            grid-row-start: 2;
+        }
+    
+        .field_name_input {
+            width: 230px;
+            padding-left: 15px;
+        }
+    
+        .field_name_input_message {
+            width: 509px;
+        }
+    
+        .communication {
+            height: 130px;
+            width: 509px;
+            display: grid;
+            grid-template-columns: 1fr;
+            grid-template-rows: 50px 50px;
+            row-gap: 30px;
+        }
+    
+        .attantion_text {
+            width: 435;
+            text-align: center;
+            display: grid;
+            grid-row-start: 2;
+        }
+    
+        .send_info {
+            margin: var(--auto-margin);
+            display: grid;
+            grid-row-start: 1;    
+        }
+    
+        .main_contacts {
+            width: 509px;
+            display: grid;
+            grid-row-start: 2;
+            grid-row-end: 2;
+    
+            grid-template-rows: 1fr 1fr;
+            grid-template-columns: 1fr 1fr;
+            row-gap: 20px;
+        }
+    
+        .contacts {
+            position: absolute;
+            display: none;
+            
+            width: 250px;
+            height: 600px;
+        }
+    
+        .cover {
+            height: 600px;
+            width: 576px;
+            padding-left: 0px;
+        }
+    
+        .main_info {
+            height: 600px;
+            width: 576px;
+            background-image: url("../Images/background_main_block2.png");  
+            display: grid;
+            grid-template-columns: 150px 1750px;
+        }
+    
+        .text_about_theatre {
+            margin-top: 117px;
+        }
+    
+        .bar_menu_img {
+            display: inline;
+            width: 26px;
+            height: 20px;
+            border: 0;
+            background: url('../Images/social_media_icons/bar_menu.png');
+        }
 
-    .contacts {
-        display: none;
-    }
+        .bar_menu_img:hover {
+            background: url(
+                '../Images/social_media_icons/bar_menu_hover.png');
+        }
+    
+        .text_cover {
+            position: absolute;
+            display: none;
+        }
 
-    .cover {
-        height: 600px;
-        width: 576px;
-        padding-left: 0px;
-    }
+        .menu_main_text {
+            top: 140px;
+        }
 
-    .main_info {
-        height: 600px;
-        width: 576px;
-        background-image: url("../Images/background_main_block2.png");  
-        display: grid;
-        grid-template-columns: 150px 1750px;
-    }
+        .menu_about_text {
+            top: 175px;
+        }
+        
+        .menu_your_post_text {
+            top: 210px;
 
-    .text_about_theatre {
-        margin-top: 117px;
-    }
+        }
 
-    .bar_menu_img {
-        display: inline;
-    }
+        .menu_partners_text {
+            top: 245px;
 
-    .text_cover {
-        display: none;
-    }
+        }
 
-    .phone_number {
-        display: inline-block;
-        margin-left: 357px;
-    }
+        .menu_contacts_text {
+            top: 280px;
 
-    .title_theatre {
-        margin-bottom: 30px;
-        text-align: center;
-    }
+        }
+    
+        .phone_number {
+            display: inline-block;
+            margin-left: 357px;
+        }
+    
+        .title_theatre {
+            margin-bottom: 30px;
+            text-align: center;
+        }
+    
+        .header {
+            margin-left: 33px;
+            margin-top: 60px;
+            display:block;
+        }
+    
+        .description {
+            margin-left: 33px;
+            width: 510px;
+            text-align: center;
+        }
+    
+        .button_theatre {
+            margin-left: 33px;
+        }
 
-    .header {
-        height: 25px;
-        width: 504px;
-        margin-left: 33px;
-        margin-top: 60px;
-        display:inline-block;
-    }
+        .text_contacts {
+            display: none;
+        }
 
-    .description {
-        margin-left: 33px;
-        width: 510px;
-        text-align: center;
-    }
+        .line_contacts {
+            display: none;
+        }
 
-    .button_theatre {
-        margin-left: 33px;
-    }
-}  
+        .phone_number {
+            margin-right: 63px;
+        }
+        
+    }  

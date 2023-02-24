@@ -7,37 +7,38 @@
   </head>
   <body class="body"> 
     <div class="main_info">
-        <div class="contacts">
-            <div id="upper_text" class="text_contacts text_bold_fonts_condensed">контактная информация</div>
-            <div class="line_contacts"></div>
-            <div class="instagram badge">
-              <a href="https://www.instagram.com/?hl=ru" target="_blank">
-                <img src="Images\instagram.png" alt="instargam">
-              </a>
+        <div id="bar_menu" class="contacts">
+          <button id="close_button" class="bar_menu_close"></button>
+          <div id="upper_text" class="text_contacts text_bold_fonts_condensed">контактная информация</div>
+          <div class="line_contacts"></div>
+          <div class="links_social_networks">
+            <div class="instagram badge item_flex" style="order: 2">
+              <div class="href size_img_mobile_inst black_a">
+                <a class="size_href" href="https://www.instagram.com/?hl=ru" target="_blank"> </a>
+              </div>
             </div> 
-            <div class="facebook badge">
-              <div class="image_facebook">
-                <a href="https://ru-ru.facebook.com/" target="_blank">
-                  <img src="Images\facebook.png" alt="facebook">
-                </a>
+            <div class="badge item_flex">
+              <div class="image_facebook href size_img_mobile_facebook black_a" style="order: 1">
+                <a class="size_href" href="https://ru-ru.facebook.com/" target="_blank"></a>
               </div>
             </div>
-            <div class="vk badge">
-              <a href="https://vk.com/" target="_blank">
-                <img src="Images\vk.png" alt="vk">
-              </a>
+            <div class="vk badge item_flex" style="order: 4">
+              <div class="vk_href href size_img_mobile_vk black_a" >
+                <a class="size_href" href="https://vk.com/" target="_blank"></a>
+              </div>
             </div>
-            <div class="youtube badge">
-              <a href="https://www.youtube.com/" target="_blank">
-                <img src="Images\youtube.png" alt="youtube">
-              </a>
+            <div class="youtube badge item_flex" style="order: 3">
+              <div class="youtube_href href size_img_mobile_youtube black_a">
+                <a class="size_href" href="https://www.youtube.com/" target="_blank"></a>
+              </div>
             </div> 
+          </div>
         </div>
         <div class="cover">
             <header id="upper_text" class="header text_bold_fonts_condensed">
-                <img class="bar_menu_img" src="Images\bar_menu.png" alt=""><span class="text_cover " href="">Главная</span><span class="text_cover " href="">О театре</span><span class="text_cover " href="">Наши постановки</span><span class="text_cover " href="">Партнеры театра</span><span class="text_cover " href="">Контакты</span><span class="text_cover phone_number " href="">+7 495 123 45 67</span>
+              <button id="bar_menu_img_id" class="bar_menu_img"></button><a href="#scroll_main" class="text_cover menu_main_text" href="">Главная</a><a href="#scroll_theatre" class="text_cover menu_about_text" href="">О театре</a><a href="#scroll_post" class="text_cover menu_your_post_text" href="">Наши постановки</a><a href="#scroll_partners" class="text_cover menu_partners_text" href="">Партнеры театра</a><a href="#scroll_contacts" class="text_cover menu_contacts_text">Контакты</a><span id="phone_number_id"  class="text_cover phone_number" href="">+7 495 123 45 67</span>
             </header>
-            <div class="info_about_theatre">
+            <div id="scroll_main" class="info_about_theatre">
               <div class="text_about_theatre">
                 <div class="title_theatre text_bold_fonts_condensed">Большой театр</div>
                 <div class="description text_normal_fonts">
@@ -54,19 +55,19 @@
                 </div>
                 <div class="navigation_poster">
                     <div class="previous_poster">
-                        <div class="arrow_down arrow"> <img src="Images\Arrow_down.png" alt="arrow_down"></div>
+                        <div class="arrow_down arrow" ></div>
                         <div class="word_down word text_bold_fonts_condensed">пред</div>
                     </div>
                     <div class="next_poster">
                       <div class="word_up word text_bold_fonts_condensed">след</div>
-                      <div class="arrow_up arrow"><img src="Images\Arrow_up.png" alt="arrow_up"></div>
+                      <div class="arrow_up arrow"></div>
                     </div>
                 </div>
               </div>
             </div>
         </div>
     </div>
-    <div class="about">
+    <div id="scroll_theatre" class="about">
         <div class="title_about text_title_blocks">О <span class="title_about_text_white">театре</span></div>
         <div class="block_about_theatre">
           <div class="history">
@@ -97,7 +98,7 @@
           </div>
         </div>
     </div>
-    <div class="staging">
+    <div id="scroll_post" class="staging">
         <div class="title_staging text_title_blocks">наши <span class="title_about_text_white">постановки</span></div>
         <div id="id_production" class="production">
           <div>
@@ -111,9 +112,7 @@
             <div class="img_prod_2">
               <img src="Images\production 2.png" alt="">
             </div>
-            <div class="find">
-              <img src="Images\find.png" alt="">
-            </div>
+            <div class="find"></div>
           </div>
           <div>
             <div class="img_prod_3">
@@ -148,7 +147,7 @@
         </div>
       </div>
     </div>
-    <div class="partners">
+    <div id="scroll_partners" class="partners">
         <div class="title_partners text_title_blocks">партнеры <span class="title_about_text_white">театра</span></div>
         <div id="id_net_logos" class="net_logos">
           <div class="row_logos">
@@ -165,7 +164,7 @@
           </div>
         </div>
     </div>
-    <div class="be_patron">
+    <div id="scroll_contacts" class="be_patron">
       <div class="title_be_patron text_title_blocks">стать <span class="title_about_text_white">меценатом</span></div>
       <div class="data_patron">
         <div class="main_contacts text_bold_fonts_condensed">
@@ -212,6 +211,7 @@
         </div>
       </div>
     </div> 
+    <div class="btn_up btn_up_hide"></div>
     <footer class="footer">
         <div class="hr_footer"></div>
         <div class="footer_text">
@@ -219,7 +219,6 @@
             <div class="developer text_footer text_normal_fonts"> Разработано: zayakiri</div>
         </div>
     </footer>
-
     <script src="Scripts\index.js"></script>
   </body>
 </html>
